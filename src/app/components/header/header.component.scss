@@ -1,0 +1,14 @@
+@import '../../../assets/styles/libs/colors';
+
+.header {
+  border-bottom: 1px solid $color-gray-1;
+  &-menu {
+    div {
+      width: 30px;
+      height: 3px;
+      margin-bottom: 7px;
+      background-color: $color-gray-2;
+      border-radius: 10px;
+    }
+  }
+}
