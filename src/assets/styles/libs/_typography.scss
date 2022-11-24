@@ -1,26 +1,22 @@
 @import './colors';
 
-// font size fs-*
-.fs-18 {
-  font-size: 18px;
-}
-.fs-20 {
-  font-size: 20px;
-}
-.fs-28 {
-  font-size: 28px;
-}
-
 // view port width vw-*
+.vw-3-9 {
+  font-size: 3.9vw;
+}
+.vw-5 {
+  font-size: 5vw;
+}
 .vw-6 {
   font-size: 6vw;
 }
-.vw-3-9 {
-  font-size: 3.9vw;
+.vw-14 {
+  width: 14vw;
 }
 .vw-33 {
   width: 33vw;
 }
+
 
 // font weight fw-*
 .fw-500 {
