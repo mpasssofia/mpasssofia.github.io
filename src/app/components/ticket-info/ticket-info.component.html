@@ -1,0 +1,34 @@
+<div class="info p-4">
+  <div [routerLink]="'/ticket'" class="text-center mb-4">
+    <img class="vw-36" src="../../../assets/images/qr-code.png" alt="qr code">
+  </div>
+
+  <div class="info-box mb-2 fsvw-3-8 text-center">
+    <div class="d-flex justify-content-between">
+      <div class="info-box-item py-1">
+        <div>Закупена на:</div>
+        <div class="color-blue-3 fw-500">{{ today.day }}.{{ today.month }}.{{ today.year }}</div>
+      </div>
+      <div class="info-box-item py-1">
+        <div>Валидна за:</div>
+        <div class="color-blue-3 fw-500">{{ today.day }}.{{ today.month }}.{{ today.year }}</div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between">
+      <div class="info-box-item py-1">
+        <div>Поръчка номер:</div>
+        <div class="color-blue-3 fw-500 ls-0-3">{{ pruchasNumber }}</div>
+      </div>
+      <div class="info-box-item py-1">
+        <div>Карта номер:</div>
+        <div class="color-blue-3 fw-500 ls-0-3">{{ ticketNumber }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center fsvw-3-8">
+    <div class="color-blue-3 fw-500 ls-0-3">Допълнителна информация:</div>
+    <div>За връщане към предишния изглед, натисни в полето на QR кода.</div>
+  </div>
+</div>

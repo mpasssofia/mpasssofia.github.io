@@ -1,0 +1,15 @@
+<div class="home p-4">
+  <div class="mb-4 fsvw-6 fw-500 text-center">
+    Налични карти
+  </div>
+
+  <div [routerLink]="'/ticket'" class="home-ticket d-flex justify-content-start align-items-center fsvw-3-8 p-2">
+    <div>
+      <img style="width: 21vw" class="me-2" src="../../../assets/images/home-ticket-type.png" alt="ticket type">
+    </div>
+    <div>
+      <div>Дневна карта</div>
+      <div class="color-blue-1 fw-500">Валидна за {{ today.day }}.{{ today.month }}.{{ today.year }}</div>
+    </div>
+  </div>
+</div>

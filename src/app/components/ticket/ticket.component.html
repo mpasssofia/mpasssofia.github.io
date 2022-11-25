@@ -12,14 +12,14 @@
         <div class="fsvw-3-9 fw-500 color-blue-2">за всички дневни линии</div>
       </div>
     </div>
-    <div class="ticket-number text-center fsvw-5">
+    <div class="text-center fsvw-5">
       <span>Номер: </span>
-      <span class="ticket-info-number-digits fw-500">D00005509---</span>
+      <span class="fw-500 ls-0-6">{{ ticketNumber }}</span>
     </div>
     <img class="position-absolute ticket-info-town-img" src="../../../assets/images/ticket-town.png" alt="ticket town">
   </div>
 
-  <div class="text-center mb-4">
+  <div [routerLink]="'/info'" class="text-center mb-4">
     <img class="vw-36" src="../../../assets/images/qr-code.png" alt="qr code">
   </div>
 
@@ -33,26 +33,26 @@
     </div>
     <div class="ticket-valid-hours row text-center">
       <div class="hour-box col-3 py-1">
-        <div class="color-blue-3 fw-700">1</div>
+        <div class="color-blue-3 fw-700 fsvw-5">0</div>
         <div>дни</div>
       </div>
-      <div class="hour-box col-3 py-1">
-        <div class="color-blue-3 fw-700">1</div>
+      <div class="hour-box col-3 py-1" [ngClass]="{'bg-color-orange-1' : hours > 0}">
+        <div class="color-blue-3 fw-700 fsvw-5">{{ hours }}</div>
         <div>часа</div>
       </div>
-      <div class="hour-box col-3 py-1">
-        <div class="color-blue-3 fw-700">1</div>
+      <div class="hour-box col-3 py-1 bg-color-orange-1">
+        <div class="color-blue-3 fw-700 fsvw-5">{{ minutes }}</div>
         <div>минути</div>
       </div>
-      <div class="hour-box col-3 py-1">
-        <div class="color-blue-3 fw-700">1</div>
+      <div class="hour-box col-3 py-1 bg-color-orange-1">
+        <div class="color-blue-3 fw-700 fsvw-5">{{ seconds }}</div>
         <div>секунди</div>
       </div>
     </div>
   </div>
 
   <div class="text-center fsvw-3-8">
-    <div class="color-blue-3 fw-500">Допълнителна информация:</div>
+    <div class="color-blue-3 fw-500 ls-0-3">Допълнителна информация:</div>
     <div>За преглед на Допълнителна и детайлна информация за картата, натисни в полето на QR кода.</div>
   </div>
 </div>

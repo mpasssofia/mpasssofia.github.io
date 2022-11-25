@@ -1,0 +1,11 @@
+@import '../../../assets/styles/libs/colors';
+
+.info {
+  &-box {
+    &-item {
+      border: 1px solid $color-gray-1;
+      width: 48%;
+      margin-bottom: 4%;
+    }
+  }
+}
