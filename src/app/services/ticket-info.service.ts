@@ -31,7 +31,7 @@ export class TicketInfoService {
   getDayInfo() {
     const date = new Date();
     const day = date.getDay();
-    const month = date.getMonth();
+    const month = date.getMonth() + 1;
     const year = date.getFullYear();
     return { day, month, year };
   }
