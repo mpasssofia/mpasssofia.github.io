@@ -17,9 +17,30 @@
       right: 10px;
       width: 17vw;
     }
-    &-number{
+    &-number {
       &-digits {
-        letter-spacing: 1vw;
+        letter-spacing: 0.6vw;
+      }
+    }
+  }
+
+  &-valid {
+    &-title {
+      border-radius: 3px 3px 0 0;
+      border: 1px solid $color-orange-1;
+    }
+    &-hours {
+      .hour-box {
+        border-top: 1px solid $color-orange-1;
+        border-bottom: 1px solid $color-orange-1;
+        border-left: 1px solid $color-orange-1;
+      }
+      .hour-box:first-child {
+        border-radius: 3px 0 0 3px;
+      }
+      .hour-box:last-child {
+        border-right: 1px solid $color-orange-1;
+        border-radius: 0 3px 3px 0;
       }
     }
   }
