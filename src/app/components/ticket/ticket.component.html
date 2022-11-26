@@ -40,11 +40,11 @@
         <div class="color-blue-3 fw-700 fsvw-5">{{ hours }}</div>
         <div>часа</div>
       </div>
-      <div class="hour-box col-3 py-1 bg-color-orange-1">
+      <div class="hour-box col-3 py-1" [ngClass]="{'bg-color-orange-1' : hours > 0 || minutes > 0}">
         <div class="color-blue-3 fw-700 fsvw-5">{{ minutes }}</div>
         <div>минути</div>
       </div>
-      <div class="hour-box col-3 py-1 bg-color-orange-1">
+      <div class="hour-box col-3 py-1" [ngClass]="{'bg-color-orange-1' : hours > 0 || minutes > 0 || seconds > 0}">
         <div class="color-blue-3 fw-700 fsvw-5">{{ seconds }}</div>
         <div>секунди</div>
       </div>
