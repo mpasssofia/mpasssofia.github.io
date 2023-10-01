@@ -25,7 +25,7 @@ export class TicketComponent implements OnInit, OnDestroy {
 
   private updateTime(date: Date) {
     this.timeLeft = setInterval(() => {
-      this.hours = 23 - date.getHours();
+      this.hours = 24 - date.getHours();
       this.minutes = 59 - date.getMinutes();
       this.seconds = 59 - date.getSeconds();
       date = new Date();      
