@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration=production --base-href 'https://mpasssofia.github.io'",
+    "build": "ng build --configuration=production --base-href \"https://mpasssofia.github.io\"",
     "publish": "ngh --dir=dist/mpass",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
